@@ -17,7 +17,7 @@ const project: IElementItemType = {
   type: EElementType.Block,
   name: "背景",
   style: {
-    background: "http://localhost:3001/bg.png",
+    background: "http://localhost:3000/bg.png",
   },
   box: {
     width: "100%",
@@ -29,7 +29,7 @@ const project: IElementItemType = {
       type: EElementType.Block,
       name: "标题",
       style: {
-        background: "http://localhost:3001/hd.png",
+        background: "http://localhost:3000/hd.png",
       },
       box: {
         width: 335,
@@ -43,7 +43,7 @@ const project: IElementItemType = {
       type: EElementType.Block,
       name: "礼物",
       style: {
-        background: "http://localhost:3001/box.png",
+        background: "http://localhost:3000/box.png",
       },
       box: {
         width: 260,
@@ -57,7 +57,7 @@ const project: IElementItemType = {
           type: EElementType.Block,
           name: "小手",
           style: {
-            background: "http://localhost:3001/pointer.png",
+            background: "http://localhost:3000/pointer.png",
           },
           box: {
             width: 50,
@@ -93,7 +93,7 @@ const project: IElementItemType = {
       type: EElementType.Button,
       name: "立即下载",
       style: {
-        background: "http://localhost:3001/download.png",
+        background: "http://localhost:3000/download.png",
       },
       box: {
         top: 540,
@@ -109,7 +109,7 @@ const project: IElementItemType = {
 };
 
 window.project = project;
-console.log(JSON.stringify(project));
+
 class App extends Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
@@ -119,7 +119,6 @@ class App extends Component<IProps, IState> {
   render() {
     return (
       <div>
-        121212
         <Layout project={window.project} />
       </div>
     );
