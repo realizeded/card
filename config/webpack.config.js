@@ -232,6 +232,9 @@ module.exports = function (webpackEnv) {
         : isEnvDevelopment &&
           ((info) =>
             path.resolve(info.absoluteResourcePath).replace(/\\/g, "/")),
+      library: "webpackUMD",
+      libraryTarget: "umd",
+      libraryExport: "default",
     },
     cache: {
       type: "filesystem",
